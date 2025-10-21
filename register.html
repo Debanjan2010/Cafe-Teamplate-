@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Spice & Soul</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <custom-navbar></custom-navbar>
+    
+    <main class="flex-grow flex items-center justify-center py-20 px-4">
+        <div class="max-w-md w-full space-y-8 bg-white rounded-3xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-300">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-amber-900 mb-2">Join Our Family</h2>
+                <p class="text-gray-600 mb-8">Begin your Pather Pachali culinary adventure</h2>
+            </div>
+            <form class="mt-8 space-y-6" id="registerForm">
+                <div class="space-y-4">
+                    <div>
+                        <label for="fullName" class="sr-only">Full Name</label>
+                        <div class="relative">
+                            <input id="fullName" name="fullName" type="text" autocomplete="name" required 
+                                class="relative block w-full px-4 py-3 border border-gray-300 rounded-xl placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                                placeholder="Full Name">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <i data-feather="user" class="text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email address</label>
+                        <div class="relative">
+                            <input id="email" name="email" type="email" autocomplete="email" required 
+                                class="relative block w-full px-4 py-3 border border-gray-300 rounded-xl placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                                placeholder="Email address">
+                            <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <i data-feather="mail" class="text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <div class="relative">
+                            <input id="password" name="password" type="password" autocomplete="new-password" required 
+                                class="relative block w-full px-4 py-3 border border-gray-300 rounded-xl placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                                placeholder="Password">
+                            <button type="button" class="toggle-password absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <i data-feather="eye" class="text-gray-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="confirmPassword" class="sr-only">Confirm Password</label>
+                        <div class="relative">
+                            <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required 
+                                class="relative block w-full px-4 py-3 border border-gray-300 rounded-xl placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
+                                placeholder="Confirm Password">
+                            <button type="button" class="toggle-password absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <i data-feather="eye" class="text-gray-400"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="agree-terms" name="agree-terms" type="checkbox" required 
+                                class="h-4 w-4 text-amber-600 focus:ring-amber-500 border-gray-300 rounded">
+                    <label for="agree-terms" class="ml-2 block text-sm text-gray-900">
+                        I agree to the 
+                        <a href="#" class="text-amber-600 hover:text-amber-500">
+                            Terms and Conditions
+                        </a>
+                    </label>
+                </div>
+
+                <div>
+                    <button type="submit" 
+                            class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-xl text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-all duration-300 transform hover:scale-105">
+                            <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                                <i data-feather="user-plus" class="text-amber-200"></i>
+                            </span>
+                            Create Account
+                    </button>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        Already have an account? 
+                        <a href="login.html" class="font-medium text-amber-600 hover:text-amber-500">
+                            Sign in here
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        
+        // Registration form handling
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            
+            // Simulate API call
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
