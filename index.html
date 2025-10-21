@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice & Soul: Pather Pachali Fusion Bistro</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-amber-50">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section id="vanta-bg" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+        <div class="relative z-20 text-center text-white px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 font-serif animate-fade-in-up">
+                Spice & Soul
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light animate-fade-in-up animation-delay-200">
+                Where Pather Pachali's nostalgia meets Chinese-Indian culinary fusion
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
+                <a href="menu.html" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Explore Our Menu
+                </a>
+                <a href="login.html" class="border-2 border-white hover:bg-white hover:text-amber-900 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
+                    Join Our Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-in-left">
+                    <h2 class="text-4xl font-bold text-amber-900 mb-6">A Cinematic Culinary Experience</h2>
+                    <p class="text-gray-700 text-lg mb-6">
+                        Inspired by Satyajit Ray's masterpiece Pather Pachali, our bistro blends the rustic charm of rural Bengal with the vibrant flavors of Chinese-Indian fusion cuisine.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-8">
+                        Every dish tells a story, every spice carries a memory, and every meal becomes a journey through time and taste.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center">
+                            <i data-feather="star" class="text-white"></i>
+                        </div>
+                        <span class="text-amber-900 font-semibold">Award-winning fusion cuisine</span>
+                    </div>
+                </div>
+                <div class="relative animate-fade-in-right">
+                    <img src="http://static.photos/vintage/640x360/42" alt="Traditional Bengali setting" class="rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-600 rounded-full flex items-center justify-center">
+                        <i data-feather="heart" class="text-white text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="py-20 bg-amber-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-amber-900 text-center mb-16">Signature Creations</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-6 shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <img src="http://static.photos/food/320x240/1" alt="Fusion Dish" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Bengali Chili Chicken</h3>
+                    <p class="text-gray-600 mb-4">Traditional Bengali spices meet Szechuan heat in this explosive fusion</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-700 font-bold">$18.99</span>
+                        <i data-feather="shopping-cart" class="text-amber-600"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <img src="http://static.photos/food/320x240/2" alt="Fusion Dish" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Hakka Noodles Thali</h3>
+                    <p class="text-gray-600 mb-4">Indian-Chinese noodles served with traditional Bengali accompaniments</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-700 font-bold">$22.99</span>
+                        <i data-feather="shopping-cart" class="text-amber-600"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-xl transform hover:-translate-y-2 transition-all duration-300">
+                    <img src="http://static.photos/food/320x240/3" alt="Fusion Dish" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-amber-900 mb-2">Pather Pachali Platter</h3>
+                    <p class="text-gray-600 mb-4">A tribute to the film with seven miniature fusion dishes</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-700 font-bold">$35.99</span>
+                        <i data-feather="shopping-cart" class="text-amber-600"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+        // Vanta.js animation
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xd97706,
+            backgroundColor: 0xfef3c7,
+            size: 1.00
+        });
+    </script>
+</body>
+</html>
